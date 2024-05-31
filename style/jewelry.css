@@ -1,0 +1,244 @@
+.logo {
+    margin-left: 3%;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    p{
+        font-size: 30px;
+        font-family:'Brush Script MT';
+        color: goldenrod;
+        margin-top: -15%;
+        margin-left: 26%;
+    }
+    
+}
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Dark overlay */
+}
+
+
+.header{
+    margin-left: 35%;
+    margin-top: -3.5%;
+    a{
+    text-decoration: none;
+    color: goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 8%;
+    }
+}
+.header a:hover {
+    border-bottom: 10px solid goldenrod ;
+    padding-bottom: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 8%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: goldenrod;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttons{
+    margin-left: 75%;
+    margin-top: -1.5%;
+ 
+    button{
+        margin-left: 20%;
+        width: 20%;
+        height: 30px;
+        background-color: white;
+        border: 2px solid goldenrod;
+        border-radius: 12px;
+        color: goldenrod;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    }
+    a{
+        text-decoration: none;
+        color: goldenrod;
+        font-weight: bold;
+    }
+}
+.buttons button:hover{
+    transform: scale(1.1);  
+    border:2px solid rgb(87, 68, 19);
+    background-color:goldenrod ;
+    a{
+    color: white;
+    }
+}
+header{
+    border-bottom: 2px solid goldenrod;
+   padding-bottom: 3%;
+   background-image: radial-gradient(rgb(251, 236, 196), white, white);
+}
+footer{
+    border-top: 2px solid goldenrod;
+    background-color: rgb(246, 242, 235);
+    .logo{
+        margin-top: 2%;
+        margin-bottom: -10%;
+       
+    }
+    .h{
+        color: goldenrod;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 14px;
+        display: flex;       
+        justify-content: space-around; 
+        align-items: center;
+        margin-top: -7%;
+        margin-left: 7%;
+    }
+}
+.mainText{
+    display: flex;       
+    justify-content: space-around; 
+    align-items: center;
+    margin-left: 8%; 
+    color: goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
+}
+.services{
+    margin-left: -1%;
+}
+.ContactUs{
+    margin-right: -3%
+    
+}
+body{
+    background-image: radial-gradient(circle, white, rgb(221, 194, 125), rgb(182, 156, 92));
+}
+.cards {
+   
+    border: 2px solid goldenrod;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Correctly creates three columns */
+    grid-template-rows: auto; /* Automatically adjusts rows based on content */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the grid container */
+    margin: auto; /* Centers the grid horizontally */
+    max-width: 1200px; /* Limits the width of the container */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    h3{
+        -webkit-text-stroke: 0.5px black;
+        color: goldenrod;
+        font-size: 20px;
+    }
+    p{
+        -webkit-text-stroke: 0.5px black;
+        color: goldenrod;
+        font-size: 16px;
+    }
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7,
+.card8, .card9, .card10, .card11, .card12 {
+    position: relative; /* Required for absolute positioning of the pseudo-element */
+    border: 2px solid goldenrod;
+    background-color: #fff; /* White background for each card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+    border-radius: 10px; /* Rounded corners for the cards */
+    overflow: hidden; /* Ensures nothing spills out of the card's rounded corners */
+    text-align: center; /* Centers the text within each card */
+    padding: 10px; /* Padding inside the card for text */
+}
+
+.card1::after, .card2::after, .card3::after, .card4::after, .card5::after, .card6::after, .card7::after,
+.card8::after, .card9::after, .card10::after, .card11::after, .card12::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Ensures the element covers the whole card width */
+    bottom: 0; /* Ensures the element covers the whole card height */
+    background: rgba(155, 155, 155, 0.2); /* Semi-transparent black for a darker overlay */
+    z-index: 1; /* Ensures the overlay is above the card's background but below the text */
+    pointer-events: none; /* Prevents the overlay from interfering with clicking/interacting with the card */
+}
+
+
+.card1 img{
+    width: 100%;
+    height: auto;
+    margin-top: 60%;
+}
+.card8 img{
+    margin-top: 15%;
+    width: 100%; /* Ensures the image covers the full width of the card */
+    height: auto; /* Keeps the image aspect ratio intact */
+}
+
+.card2 img{
+    margin-top: 55%;
+    width: 100%;
+    height: auto;
+}
+.card3 img{
+    margin-top: 50%;
+    width: 110%;
+    height: auto;
+}
+.card4 img{
+    margin-top: 50%;
+    width: 110%;
+    height: auto;
+}
+.card5 img, .card6 img, .card7 img
+{
+    width: 100%; /* Ensures the image covers the full width of the card */
+    height: 75%; /* Keeps the image aspect ratio intact */  
+}
+.card8 img{
+    margin-top: -5%;
+}
+.card9 img{
+    margin-top: 20%;
+    width: 100%;
+    height: 65%;
+}
+.card10 img{
+    margin-top: 20%;
+    width: 100%;
+    height: 65%;
+}
+.card11 img{
+    margin-top: 20%;
+    width: 100%;
+    height: 65%;
+}
+.card12 img{
+    margin-top:30%;
+    width: 90%;
+    height: auto;
+}

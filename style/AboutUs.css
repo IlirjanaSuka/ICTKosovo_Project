@@ -1,0 +1,209 @@
+
+.logo {
+    margin-left: 3%;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    p{
+        font-size: 30px;
+        font-family:'Brush Script MT';
+        color: goldenrod;
+        margin-top: -15%;
+        margin-left: 26%;
+    }
+    
+}
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+
+.header{
+    margin-left: 35%;
+    margin-top: -3.5%;
+    a{
+    text-decoration: none;
+    color: goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 8%;
+    }
+}
+.header a:hover {
+    border-bottom: 10px solid goldenrod ;
+    padding-bottom: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 8%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: goldenrod;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttons{
+    margin-left: 75%;
+    margin-top: -1.5%;
+ 
+    button{
+        margin-left: 20%;
+        width: 20%;
+        height: 30px;
+        background-color: white;
+        border: 2px solid goldenrod;
+        border-radius: 12px;
+        color: goldenrod;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    }
+    a{
+        text-decoration: none;
+        color: goldenrod;
+        font-weight: bold;
+    }
+}
+.buttons button:hover{
+    transform: scale(1.1);  
+    border:2px solid rgb(87, 68, 19);
+    background-color:goldenrod ;
+    a{
+    color: white;
+    }
+}
+header{
+    border-bottom: 2px solid goldenrod;
+   padding-bottom: 3%;
+   background-image: radial-gradient(rgb(251, 236, 196), white, white);
+}
+footer{
+    border-top: 2px solid goldenrod;
+    background-color: rgb(246, 242, 235);
+    .logo{
+        margin-top: 2%;
+        margin-bottom: -10%;
+       
+    }
+    .h{
+        color: goldenrod;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 14px;
+        display: flex;       
+        justify-content: space-around; 
+        align-items: center;
+        margin-top: -7%;
+        margin-left: 7%;
+    }
+}
+
+.mainText{
+    display: flex;       
+    justify-content: space-around; 
+    align-items: center;
+    margin-left: 8%; 
+    color: goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
+}
+.services{
+    margin-left: -1%;
+}
+.ContactUs{
+    margin-right: -3%
+}
+.body{
+    background-image: radial-gradient(rgb(253, 238, 196), white, rgb(253, 244, 244));
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%; 
+    position: relative;
+    overflow: hidden;
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,224,0), rgba(255,255,224,0.3));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+section:hover::before {
+    opacity: 1;
+}
+
+
+section h2 {
+    color: goldenrod;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid goldenrod;
+}
+
+
+section ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+
+section a {
+    color: goldenrod;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+section a:hover {
+    color: #b59f3b;
+    text-decoration: underline;
+}
+
